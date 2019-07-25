@@ -2,10 +2,9 @@ document.getElementById('loan-form').addEventListener('submit', calculateResults
 
 function calculateResults(e) {
     console.log("Calc");
-    const resetButton = document.getElementById('resetButton');
+  
     
-    const ResultSection = document.getElementById('result-container');
-    //Grab variables
+    
     const Amount =  document.getElementById('loan-amount');
     const Interest = document.getElementById('loan-interest');
     const Years = document.getElementById('loan-years');
@@ -22,17 +21,14 @@ function calculateResults(e) {
 
     if(isFinite(monthly)) {
        
-        MonthlyPayment.value = ("Monthly Payment: "+monthly.toFixed(2));
-        TotalAmount.value = ("Total Amount: "+ (monthly * CalculatedPayments).toFixed(2)_;
+        MonthlyPayment.value = ("Monthly Payment: "+(monthly.toFixed(2)));
+        TotalAmount.value = ("Total Amount: "+ (monthly * CalculatedPayments).toFixed(2));
         TotalInterest.value = ("Total Interest: "+ ((monthly * CalculatedPayments) - principal).toFixed(2));
     } else {
         console.log("Please check your numbers.");
         
     }
 
-    resetButton.addEventListener('click', function(){
-
-    })
 
     
     

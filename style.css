@@ -1,3 +1,4 @@
+
 body {
     background: #4568DC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
@@ -23,24 +24,29 @@ body {
 }
 
 
-
-label {
-    font-size: 14px;
+button {
+    background-color: beige;
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 15px;
+    width: 70px;
+    cursor: pointer;
 }
+
 
 input {
     
-    font-size: 16px;
+    
     margin: 5px;
-    padding-left: 15px;
+    
     border-radius: 20px;
     border: 2px solid #30b7c3;
     height: 25px;
-    widows: 150px;
-    font-family: 'Roboto';
+    width: 220px;
+    text-align: center;
+    
     
 }
 
-.input-box {
-    
-}
+
+
