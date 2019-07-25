@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loan Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h2>Loan Calculator</h2>
+        <form id="loan-form">
+            <!-- INPUT SECTION -->
+            <div class="text-input">
+               
+                <input type="text" name="amount" placeholder="Loan Amount" id="loan-amount" class="input-box">
+            </div>
+            <div class="text-input">
+               
+                <input type="text" name="interest" placeholder="Interest Rate" id="loan-interest" class="input-box">
+            </div>
+            <div class="text-input">
+                
+                <input type="text" name="years" placeholder="Repay Years" id="loan-years" class="input-box">
+            </div> <br>
+            <button type="submit">Submit</button> 
+            <button type="reset" id="resetButton">Reset</button>
+    
+            <!-- RESULT SECTION -->
+            <div id="result-container" class="hide-result">
+                <div class="results">
+        
+                    <input type="text" name="monthly" id="monthly" disabled>
+                </div>
+                <div class="results">
+                
+                    <input type="text" name="total-amount" id="total-amount" disabled>
+                </div>
+                <div class="results">
+                    
+                    <input type="text" name="total-interest" id="total-interest" disabled>
+                </div>
+            </div>
+             
+        </form>
+        <p>Created by Rayyan.</p>
+         
+    </div>
+    <script type="text/javascript" src="app.js" ></script>
+</body>
+</html>
